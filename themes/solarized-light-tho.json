@@ -1,5 +1,17 @@
 {
 	"name": "Solarized Light (tho)",
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+	  "enumMember": {
+		"foreground": "#56b6c2"
+	  },
+	  "variable.constant": {
+		"foreground": "#d19a66"
+	  },
+	  "variable.defaultLibrary": {
+		"foreground": "#e5c07b"
+	  }
+	},
 	"tokenColors": [
 		{
 			"settings": {
@@ -99,14 +111,13 @@
 				"fontStyle": "bold",
 				"foreground": "#2A91AF"
 			}
-	},
+	    },
 		{
 			"name": "Function name",
 			"scope": "entity.name.function",
 			"settings": {
-				//"fontStyle": "bold",
+				"fontStyle": "bold",
 				"foreground": "#6C71C4"
-				//"foreground": "#000080"
 			}
 		},
 		{
@@ -114,7 +125,7 @@
             "scope": "meta.object-literal.key",
             "settings": {
 				"fontStyle": "bold",
-                "foreground": "#6C71C4"
+				"foreground": "#6C71C4"
             }
         },
 		{
@@ -124,6 +135,16 @@
 				"foreground": "#268BD2"
 			}
 		},
+
+		  {
+			"name": "js/ts params (italic)",
+			"scope": "entity.other.attribute-name.js,entity.other.attribute-name.ts,entity.other.attribute-name.jsx,entity.other.attribute-name.tsx,variable.parameter,variable.language.super",
+			"settings": {
+			  "fontStyle": "italic",
+			  "foreground": "#268BD2"
+			}
+		  },
+
 		{
 			"name": "Embedded code markers",
 			"scope": [
@@ -199,7 +220,9 @@
 			"name": "Library function",
 			"scope": "support.function",
 			"settings": {
+				// "fontStyle": "bold",
 				"foreground": "#268BD2"
+				// "foreground": "#000080"
 			}
 		},
 		{
